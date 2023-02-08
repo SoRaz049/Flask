@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+    <title>Bootstrap Example</title>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+  </head>
+  <body class="p-3 m-0 border-0 bd-example">
+
+    <p>
+        <a class="btn btn-primary collapsed" data-bs-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">Active To-do list</a>
+        <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#multiCollapseExample2" aria-expanded="false" aria-controls="multiCollapseExample2">Completed works</button>
+      </p>
+      <div class="row">
+        <div class="col">
+          <div class="multi-collapse collapse" id="multiCollapseExample1">
+            <div class="card card-body">
+                <table class="table">
+                    <thead>
+                      <tr>
+                        <th scope="col">No. of works</th>
+                        <th scope="col">Work</th>
+                        <th scope="col">Time</th>
+                      </tr>
+
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row">1</th>
+                        <td>Assignment</td>
+                        <td>Today</td>
+                      </tr>
+
+                      <tr>
+                        <th scope="row">2</th>
+                        <td>Data fill</td>
+                        <td>Morning</td>
+   
+                      </tr>
+                      <tr>
+                        <th scope="row">3</th>
+                        <td>Apply</td>
+                        <td>Evening</td>
+                      </tr>
+
+                    </tbody>
+                  </table>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="collapse multi-collapse" id="multiCollapseExample2">
+            <div class="card card-body">
+                <table class="table">
+                    <thead>
+                      <tr>
+                        <th scope="col">No. of work</th>
+                        <th scope="col">Work</th>
+                        <th scope="col">Status</th>
+                      </tr>
+
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row">1</th>
+                        <td>Homework</td>
+                        <td>Completed only of Ai, baki duita garna baki.</tr>
+                      </tr>
+
+                      <tr>
+                        <th scope="row">2</th>
+                        <td>Blogs</td>
+                        <td>PArtially completed about the major Computer Science</td>
+                      </tr>
+
+                    </tbody>
+                  </table>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <form>
+        <fieldset disabled>
+          <legend><center><h1>ADD YOUR TO-DO LIST</h1></center></legend>
+          <div class="container">
+            <label for="Add your work" class="form-label">Add your work</label>
+            <input type="text" id="disabledTextInput" class="form-control" placeholder="Add your work">
+          </div>
+          <div class="container">
+            <label for="Status" class="form-label">Status of your work</label>
+            <select id="Status of your work" class="form-select">
+              <option>Status of your work</option>
+            </select>
+          </div>
+          <button type="Upload" class="btn btn-primary">Submit</button>
+        </fieldset>
+      </form>
+
+  </body>
+</html>
